@@ -4,17 +4,23 @@
     "rootDir": ".",
     "sourceMap": true,
     "declaration": false,
+    "inlineSources": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es2015",
-    "module": "esnext",
-    "lib": ["es2017", "dom"],
+    "target": "ESNext",
+    "module": "CommonJS",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@cloudflicks/interfaces": ["libs/interfaces/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
